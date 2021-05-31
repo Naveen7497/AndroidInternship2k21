@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp"
+    android:background="#C69B9B"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/heading"
+        android:gravity="center"
+        android:text="@string/head"
+        android:textStyle="bold"
+        android:textSize="36sp"
+        android:textColor="#7A2C2C"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/subhead"
+        android:text="@string/shead"
+        android:layout_below="@+id/heading"
+        android:textSize="27sp"
+        android:textStyle="italic"
+        android:textColor="#AE7233"
+        android:layout_marginTop="15dp"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/subhead"
+    android:orientation="vertical"
+    android:layout_marginTop="15dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/titlehead"
+        android:textStyle="bold|italic"
+        android:text="@string/thead"
+        android:textSize="24sp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="947dp"
+        android:background="#A88A5C">
+
+
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:autoLink="all"
+        android:fontFamily="@font/aladin"
+        android:text="@string/text"
+        android:textSize="24sp" />
+    </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>
